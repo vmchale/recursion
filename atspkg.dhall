@@ -5,6 +5,9 @@ in prelude.default ⫽
     [ prelude.bin ⫽
       { src = "test/recursion_schemes.dats"
       , target = "target/recursion_schemes"
+      , gcBin = True
+      , libs = [ "pthread" ]
       }
     ]
+  , dependencies = prelude.mapPlainDeps [ "specats" ]
   }
