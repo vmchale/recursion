@@ -1,4 +1,5 @@
 staload "SATS/functor.sats"
+staload "SATS/recursive.sats"
 
 #include "DATS/functor.dats"
 #include "share/atspre_staload.hats"
