@@ -8,5 +8,7 @@ in prelude.default ⫽
       , gcBin = True
       }
     ]
+  , ccompiler = "ccomp"
+  , cflags = [ "-fstruct-passing" ]
   , dependencies = prelude.mapPlainDeps [ "specats" ]
   }
