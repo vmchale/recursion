@@ -6,20 +6,20 @@ staload "SATS/recursive.sats"
 #include "DATS/recursive.dats"
 #include "DATS/recursive_list0.dats"
 
-val folded: int = let
-  fun f(i : list0f(int, int)) : int =
-    case+ i of
-      | list0_consf (x, xs) => x + xs
-      | list0_nilf() => 0
-  
-  val list = list0_cons(2, list0_cons(1, list0_nil()))
-in
-  cata(lam x0 =<cloref1> f(x0), list)
-end
-val folded_check = eq_g0int_int(folded, 3)
-
 implement main0 () =
   {
+    val folded: int = let
+      fn f(i : list0f(int, int)) : int =
+        case+ i of
+          | list0_consf (x, xs) => x + xs
+          | list0_nilf() => 0
+      
+      var list = list0_cons(2, list0_cons(1, list0_nil()))
+      var result = cata(lam x0 =<cloref1> f(x0), list)
+    in
+      result
+    end
+    var folded_check = eq_g0int_int(folded, 3)
     var n0 = @{ fst = "folded", snd = folded_check }
     var xs = n0 :: nil
     var total = list_vt_length(xs)
