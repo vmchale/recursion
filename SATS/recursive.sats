@@ -10,7 +10,6 @@ fun {a:t@ype} project (recursive_functor(a)) :
 
 fun {a:t@ype}{b:t@ype} cata (algebra(a,b), recursive_functor(a)) : b
 
-// FIXME this should be a plain functor?
 fun {a:t@ype}{x0:t@ype}{x1:t@ype} map_base ( f : x0 -<cloref1> x1
                                            , base_functor(a,x0)
                                            ) : base_functor(a, x1)
