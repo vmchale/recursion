@@ -1,11 +1,10 @@
 staload "SATS/functor.sats"
 staload "SATS/recursive.sats"
-staload "libats/ML/SATS/basis.sats"
 
 #include "share/atspre_staload.hats"
 #include "$PATSHOMELOCS/specats-0.2.3/mylibies.hats"
-#include "DATS/recursive_list0.dats"
 #include "DATS/recursive.dats"
+#include "DATS/recursive_list0.dats"
 
 val folded: int = let
   fun f(i : list0f(int, int)) : int =

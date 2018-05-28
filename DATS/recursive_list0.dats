@@ -1,5 +1,5 @@
 staload "SATS/recursive.sats"
-staload "libats/ML/SATS/list0.sats"
+staload "libats/ML/SATS/basis.sats"
 
 datatype list0f(a: t@ype, x: t@ype+) =
   | list0_consf of (a, x)
