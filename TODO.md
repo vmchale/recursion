@@ -1,2 +1,2 @@
-- [ ] functors for viewtypes
-- [ ] fix up catamorphisms
+- [ ] Work for viewtypes
+- [ ] Mendler-style catamorphisms?
