@@ -3,8 +3,8 @@ let prelude = https://raw.githubusercontent.com/vmchale/atspkg/master/ats-pkg/dh
 in prelude.default ⫽
   { test =
     [ prelude.bin ⫽
-      { src = "test/recursion_schemes.dats"
-      , target = "target/recursion_schemes"
+      { src = "test/recursion.dats"
+      , target = "target/recursion"
       , gcBin = True
       }
     ]
