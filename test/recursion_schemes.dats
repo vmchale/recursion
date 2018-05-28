@@ -6,6 +6,7 @@ staload "SATS/recursive.sats"
 #include "$PATSHOMELOCS/specats-0.2.3/mylibies.hats"
 #include "DATS/functor_option.dats"
 #include "DATS/recursive_list0.dats"
+#include "DATS/recursive.dats"
 
 val option_map = let
   val x = map(lam x => x + 1u, Some(0u))

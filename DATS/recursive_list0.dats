@@ -1,7 +1,7 @@
 staload "SATS/recursive.sats"
+staload "SATS/functor.sats"
 staload "libats/ML/SATS/list0.sats"
 
-// TODO functor/lists?
 datatype list0f(a: t@ype, x: t@ype+) =
   | list0_consf of (a, x)
   | list0_nilf of ()
@@ -13,6 +13,3 @@ implement {a} project (x) =
   case+ x of
     | list0_cons (y, ys) => list0_consf(y, ys)
     | list0_nil() => list0_nilf()
-
-// implement {a}{b} cata(f, x) =
-//  f(
