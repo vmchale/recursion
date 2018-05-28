@@ -4,10 +4,8 @@
 
 ## Demo
 
-Run
+Download [`atspkg`](https://github.com/vmchale/atspkg) and run
 
 ```bash
 atspkg test
 ```
-
-to run the test suite.
