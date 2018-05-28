@@ -13,3 +13,8 @@ implement {a} project (x) =
   case+ x of
     | list0_cons (y, ys) => list0_consf(y, ys)
     | list0_nil() => list0_nilf()
+
+implement {a}{x0}{x1} map_base (f, x) =
+  case+ x of
+    | list0_consf (x, xs) => list0_consf(x, f(xs))
+    | list0_nilf() => list0_nilf()
