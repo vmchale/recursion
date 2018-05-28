@@ -1,0 +1,2 @@
+- [ ] functors for viewtypes
+- [ ] fix up catamorphisms
