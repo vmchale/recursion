@@ -1,5 +1,4 @@
 staload "SATS/recursive.sats"
-staload "SATS/functor.sats"
 staload "libats/ML/SATS/list0.sats"
 
 datatype list0f(a: t@ype, x: t@ype+) =
@@ -14,7 +13,7 @@ implement {a} project (x) =
     | list0_cons (y, ys) => list0_consf(y, ys)
     | list0_nil() => list0_nilf()
 
-implement {a}{x0}{x1} map_base (f, x) =
+implement {a}{x0}{x1} map (f, x) =
   case+ x of
     | list0_consf (x, xs) => list0_consf(x, f(xs))
     | list0_nilf() => list0_nilf()
