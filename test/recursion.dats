@@ -23,9 +23,9 @@ implement main0 () =
       sum(list)
     end
     var folded_check = eq_g0int_int(folded, 3)
-    var n0 = @{ fst = "folded", snd = folded_check }
+    var n0 = @{ fst = "cata", snd = folded_check }
     var xs = n0 :: nil
     var total = list_vt_length(xs)
-    val g = @{ group = "Functor", leaves = xs } : test_tree
+    val g = @{ group = "Recursion schemes", leaves = xs } : test_tree
     val _ = iterate_list(g, 0, total)
   }

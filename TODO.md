@@ -1,2 +1,4 @@
+- [ ] Make functors more sensible
 - [ ] Work for viewtypes
+  - [ ] freeing vs. non-freeing functions
 - [ ] Mendler-style catamorphisms?
