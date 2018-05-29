@@ -7,6 +7,11 @@ in prelude.default ⫽
       , target = "target/recursion"
       , gcBin = True
       }
+    , prelude.bin ⫽
+      { src = "test/calc.dats"
+      , target = "target/test"
+      , gcBin = True
+      }
     ]
   , dependencies = prelude.mapPlainDeps [ "specats" ]
   }
