@@ -1,4 +1,5 @@
 - [ ] Make functors more sensible
+  - [ ] Currently seems to be impossible so maybe suggest it for ATS Xanadu?
 - [ ] Work for viewtypes
   - [ ] freeing vs. non-freeing functions
 - [ ] Mendler-style catamorphisms?
