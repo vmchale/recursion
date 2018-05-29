@@ -9,7 +9,7 @@ in prelude.default ⫽
       }
     , prelude.bin ⫽
       { src = "test/calc.dats"
-      , target = "target/test"
+      , target = "target/calc"
       , gcBin = True
       }
     ]
