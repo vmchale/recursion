@@ -1,5 +1,5 @@
-abstype recursive_functor_type(a: t@ype+) = ptr
-abstype base_functor_type(a: t@ype, x: t@ype+) = ptr
+abstype recursive_functor_type(t@ype+) = ptr
+abstype base_functor_type(t@ype, t@ype+) = ptr
 
 typedef recursive_functor(a: t@ype) = recursive_functor_type(a)
 typedef base_functor(a: t@ype, x: t@ype) = base_functor_type(a, x)
