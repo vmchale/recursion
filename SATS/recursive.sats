@@ -1,3 +1,4 @@
+// TODO: try a functorial template instead?
 abstype recursive_functor_type(t@ype+) = ptr
 abstype base_functor_type(t@ype, t@ype+) = ptr
 

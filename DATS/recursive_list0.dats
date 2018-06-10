@@ -5,8 +5,8 @@ datatype list0f(a: t@ype, x: t@ype+) =
   | list0_consf of (a, x)
   | list0_nilf of ()
 
-assume base_functor_type(a: t@ype, x: t@ype) = list0f(a, x)
-assume recursive_functor_type(a: t@ype) = list0(a)
+absimpl base_functor_type(a: t@ype, x: t@ype) = list0f(a, x)
+absimpl recursive_functor_type(a: t@ype) = list0(a)
 
 implement {a} project (x) =
   case+ x of
