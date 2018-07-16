@@ -8,6 +8,11 @@ datatype list0f(a: t@ype, x: t@ype+) =
 absimpl base_functor_type(a: t@ype, x: t@ype) = list0f(a, x)
 absimpl recursive_functor_type(a: t@ype) = list0(a)
 
+implement {a} embed (x) =
+  case+ x of
+    | list0_consf (y, ys) => list0_cons(y, ys)
+    | list0_nilf() => list0_nil()
+
 implement {a} project (x) =
   case+ x of
     | list0_cons (y, ys) => list0_consf(y, ys)

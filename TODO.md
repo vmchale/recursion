@@ -3,3 +3,5 @@
 - [ ] Work for viewtypes
   - [ ] freeing vs. non-freeing functions
 - [ ] Mendler-style catamorphisms?
+- [ ] Anamorphism and/or hylomorphism (calculating string length?)
+  - [ ] Possibly useful for the obfuscated C contest (lol)
