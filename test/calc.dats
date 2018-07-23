@@ -1,7 +1,7 @@
 staload "SATS/recursive.sats"
 
 #include "share/atspre_staload.hats"
-#include "$PATSHOMELOCS/specats-0.2.3/mylibies.hats"
+#include "$PATSHOMELOCS/specats-0.4.0/mylibies.hats"
 #include "DATS/recursive.dats"
 
 datatype expression =
@@ -56,7 +56,7 @@ in
       val expr = add(value(2), multiply(value(3), value(5)))
       val i = calculate(expr)
       var folded_check = eq_g0int_int(i, 17)
-      var n0 = @{ fst = "arithmetic", snd = folded_check }
+      var n0 = @{ test_name = "arithmetic", test_result = folded_check }
       var xs = n0 :: nil
       var total = list_vt_length(xs)
       val g = @{ group = "Catamorphisms", leaves = xs } : test_tree

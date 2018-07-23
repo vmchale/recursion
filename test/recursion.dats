@@ -1,7 +1,7 @@
 staload "SATS/recursive.sats"
 
 #include "share/atspre_staload.hats"
-#include "$PATSHOMELOCS/specats-0.2.3/mylibies.hats"
+#include "$PATSHOMELOCS/specats-0.4.0/mylibies.hats"
 #include "DATS/recursive.dats"
 #include "DATS/recursive_list0.dats"
 
@@ -23,7 +23,7 @@ implement main0 () =
       sum(list)
     end
     var folded_check = eq_g0int_int(folded, 3)
-    var n0 = @{ fst = "cata", snd = folded_check }
+    var n0 = @{ test_name = "cata", test_result = folded_check }
     var xs = n0 :: nil
     var total = list_vt_length(xs)
     val g = @{ group = "Recursion schemes", leaves = xs } : test_tree
