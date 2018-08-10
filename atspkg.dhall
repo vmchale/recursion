@@ -12,6 +12,11 @@ in prelude.default ⫽
       , target = "target/calc"
       , gcBin = True
       }
+    , prelude.bin ⫽
+      { src = "test/sum.dats"
+      , target = "target/sum"
+      , gcBin = True
+      }
     ]
   , dependencies = prelude.mapPlainDeps [ "specats" ]
   }
