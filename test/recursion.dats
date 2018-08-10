@@ -4,6 +4,7 @@ staload "SATS/recursive.sats"
 #include "$PATSHOMELOCS/specats-0.4.0/mylibies.hats"
 #include "DATS/recursive.dats"
 #include "DATS/recursive_list0.dats"
+#include "DATS/recursive_prf.dats"
 
 fun sum(is : list0(int)) : int =
   let

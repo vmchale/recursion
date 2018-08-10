@@ -5,3 +5,4 @@
 - [ ] Mendler-style catamorphisms?
 - [ ] Anamorphism and/or hylomorphism (calculating string length?)
   - [ ] Possibly useful for the obfuscated C contest (lol)
+- [ ] Proof-level recursion schemes? Possibly something w/ arrays.
