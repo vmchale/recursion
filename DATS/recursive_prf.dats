@@ -22,8 +22,8 @@ prfun {A:prop} PROJECT {n:nat} (FUNCTOR_PROP(A,n)) : BASE_FUNCTOR_PROP(A, FUNCTO
 extern
 prfn {A:prop}{B:prop} EMPTY_FUNCTOR {n:nat}  : BASE_FUNCTOR_PROP(A, FUNCTOR_PROP(A,n))
 
-assume FUNCTOR_PROP(A, n) = LIST_PROP(A, n)
-assume BASE_FUNCTOR_PROP(A, B) = LISTF_PROP(A, B)
+absimpl FUNCTOR_PROP(A, n) = LIST_PROP(A, n)
+absimpl BASE_FUNCTOR_PROP(A, B) = LISTF_PROP(A, B)
 
 // Proof-level catamorphism
 prfun {A:prop}{B:prop} CATA {n:nat} .<n>. (F : ALGEBRA(A, B), A : FUNCTOR_PROP(A, n)) : B =
