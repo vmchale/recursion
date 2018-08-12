@@ -1,3 +1,4 @@
+// Functorial proofs in ATS
 absprop FUNCTOR_PROP (A : prop, n : int)
 
 absprop BASE_FUNCTOR_PROP (A : prop, B : prop)
@@ -24,6 +25,7 @@ prfn {A:prop}{B:prop} EMPTY_FUNCTOR {n:nat}  : BASE_FUNCTOR_PROP(A, FUNCTOR_PROP
 assume FUNCTOR_PROP(A, n) = LIST_PROP(A, n)
 assume BASE_FUNCTOR_PROP(A, B) = LISTF_PROP(A, B)
 
+// Proof-level catamorphism
 prfun {A:prop}{B:prop} CATA {n:nat} .<n>. (F : ALGEBRA(A, B), A : FUNCTOR_PROP(A, n)) : B =
   sif n == 0 then
     F(LISTF_PROP_NIL)
