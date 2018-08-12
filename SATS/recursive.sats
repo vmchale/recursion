@@ -13,13 +13,13 @@ fun {a:t@ype} project (recursive_functor(a)) : base_functor(a, recursive_functor
 fun {a:t@ype} embed (base_functor(a,recursive_functor(a))) : recursive_functor(a)
 
 // A catamorphism
-fun {b:t@ype}{a:t@ype} cata (algebra(a,b), recursive_functor(a)) : b
+fun {a:t@ype}{b:t@ype} cata (algebra(a,b), recursive_functor(a)) : b
 
 // An anamorphism
-fun {b:t@ype}{a:t@ype} ana (coalgebra(b,a), a) : recursive_functor(b)
+fun {a:t@ype}{b:t@ype} ana (coalgebra(b,a), a) : recursive_functor(b)
 
 // A hylomorphism
-fun {b:t@ype}{a:t@ype}{x:t@ype} hylo (algebra(x,b), coalgebra(x,a), a) : b
+fun {a:t@ype}{b:t@ype}{x:t@ype} hylo (algebra(x,b), coalgebra(x,a), a) : b
 
 // Lift a function using a functor
-fun {x1:t@ype}{x0:t@ype}{a:t@ype} map (x0 -<cloref1> x1, base_functor(a,x0)) : base_functor(a, x1)
+fun {a:t@ype}{x0:t@ype}{x1:t@ype} map (x0 -<cloref1> x1, base_functor(a,x0)) : base_functor(a, x1)
