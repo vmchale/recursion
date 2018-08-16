@@ -17,7 +17,7 @@ prfun MAP {A:prop}{B:prop}{C:prop} (F : B -<prf> C, X : BASE_FUNCTOR_PROP(A, B))
 propdef ALGEBRA (A : prop, B : prop) = BASE_FUNCTOR_PROP(A, B) -<prf> B
 
 extern
-prfun {A:prop} PROJECT {n:nat} (FUNCTOR_PROP(A,n)) : BASE_FUNCTOR_PROP(A, FUNCTOR_PROP(A,n-1))
+prfn {A:prop} PROJECT {n:nat} (FUNCTOR_PROP(A,n)) : BASE_FUNCTOR_PROP(A, FUNCTOR_PROP(A,n-1))
 
 extern
 prfn {A:prop}{B:prop} EMPTY_FUNCTOR {n:nat}  : BASE_FUNCTOR_PROP(A, FUNCTOR_PROP(A,n))
