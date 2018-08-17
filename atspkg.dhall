@@ -4,12 +4,12 @@ in prelude.default ⫽
   { test =
     [ prelude.bin ⫽
       { src = "test/recursion.dats"
-      , target = "target/recursion"
+      , target = "${prelude.atsProject}/recursion"
       , gcBin = True
       }
     , prelude.bin ⫽
       { src = "test/calc.dats"
-      , target = "target/calc"
+      , target = "${prelude.atsProject}/calc"
       , gcBin = True
       }
     ]
