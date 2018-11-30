@@ -51,11 +51,16 @@ prfun {A:prop}{B:prop} CATA {n:nat} .<n>. (F : ALGEBRA(A, B), A : FUNCTOR_PROP(A
   else
     F(MAP(lam A0 =<prf> CATA(F,A0),PROJECT(A)))
 
-extern prfn {a:view} gfree_v(a) : void
+extern
+prfn {a:view} gfree_v (a) : void
 
 prfun {a:view}{b:view} cata_v {n:nat} .<n>. (f : algebra_v(a, b), a : functor_v(a, n)) : b =
   sif n == 0 then
-    (gfree_v<functor_v(a,n)>(a) ; f(list_v_nilf))
+    let
+      prval () = gfree_v<functor_v(a, n)>(a)
+    in
+      f(list_v_nilf)
+    end
   else
     f(map_v(lam a0 =<prf> cata_v(f,a0),project_v(a)))
 
