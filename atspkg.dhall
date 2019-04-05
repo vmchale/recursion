@@ -13,5 +13,5 @@ in prelude.default ⫽
       , gcBin = True
       }
     ]
-  , dependencies = prelude.mapPlainDeps [ "specats" ]
+  , dependencies = prelude.mapPlainDeps [ "specats", "either" ]
   }
