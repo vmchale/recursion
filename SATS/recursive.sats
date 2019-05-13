@@ -1,4 +1,4 @@
-staload "$PATSHOMELOCS/either-0.2.2/either.sats"
+staload "$PATSHOMELOCS/either-0.2.4/either.sats"
 
 abstype recursive_functor_type(t@ype+) = ptr
 abstype base_functor_type(t@ype, t@ype+) = ptr
