@@ -2,4 +2,4 @@ let prelude = https://raw.githubusercontent.com/vmchale/atspkg/master/ats-pkg/dh
 
 in λ(x : List Natural) →
   prelude.makePkg { x = x, name = "recursion", githubUsername = "vmchale" }
-    ⫽ { description = [ "A simple-minded package for recursion schemes in ATS" ] : Optional Text }
+    ⫽ { description = Some "A package for recursion schemes in ATS" }
