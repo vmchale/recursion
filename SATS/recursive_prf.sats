@@ -13,9 +13,13 @@ prfn map_v {a:view}{b:view}{c:view} (f : b -<prf> c, x : base_functor_v(a, b)) :
 
 propdef ALGEBRA (A : prop, B : prop) = BASE_FUNCTOR_PROP(A, B) -<prf> B
 
+propdef COALGEBRA (A : prop, B : prop) = B -<prf> BASE_FUNCTOR_PROP(A, B)
+
 viewdef algebra_v(a: view, b: view) = base_functor_v(a, b) -<prf> b
 
 prfn {A:prop} PROJECT {n:nat} (FUNCTOR_PROP(A,n)) : BASE_FUNCTOR_PROP(A, FUNCTOR_PROP(A,n-1))
+
+prfn {A:prop} EMBED {n:nat} (BASE_FUNCTOR_PROP(A,FUNCTOR_PROP(A,n))) : FUNCTOR_PROP(A, n-1)
 
 prval {A:prop}{B:prop} STOP : BASE_FUNCTOR_PROP(A, B)
 
