@@ -1,4 +1,5 @@
 staload "SATS/recursive.sats"
+staload "SATS/recursive_prf.sats"
 
 #include "share/atspre_staload.hats"
 #include "$PATSHOMELOCS/specats-0.4.0/mylibies.hats"
