@@ -6,6 +6,7 @@ staload "SATS/recursive_prf.sats"
 #include "DATS/recursive.dats"
 #include "DATS/recursive_list0.dats"
 #include "DATS/recursive_prf.dats"
+#include "DATS/recursive_list_prf.dats"
 
 fun sum(is : list0(int)) : int =
   let
